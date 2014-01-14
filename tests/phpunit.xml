@@ -1,0 +1,13 @@
+<phpunit bootstrap="./Bootstrap.php" colors="true">
+    <testsuites>
+        <testsuite name="CobyHTTP Test Suite">
+            <directory>./CobyHTTP</directory>
+            <exclude>./CobyHTTP/_files/</exclude>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix='.php'>../src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
