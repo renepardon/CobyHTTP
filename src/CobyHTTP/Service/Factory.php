@@ -11,7 +11,7 @@ class Factory implements FactoryInterface
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
         $config = $serviceLocator->get('Config');
-        // $service = new CobyHTTP($config['cobyhttp']);
+        $service = new CobyHTTP($config['cobyhttp']);
 
         return $service;
     }
