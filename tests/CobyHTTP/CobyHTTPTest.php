@@ -24,4 +24,8 @@ class CobyHTTP extends TestCase
         $this->serviceManager = new ServiceManager();
         $this->serviceManager->setService('Config', $moduleConfig);
     }
+
+    public function testNothing()
+    {
+    }
 }
